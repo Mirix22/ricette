@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">	
+	<style type="text/css">
+	*{margin: 0;}
+	{padding: 0;}
+		#menù,
+		#section-1,
+		#section-2,
+		#section-3,
+		#section-4,
+		#section-5{
+			min-height: 100vh;
+		}
+		
+		#menù{
+			background-image: url(./cucinaluminosa.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: flex;
+			flex-direction: column; /* qui diciamo che l'asse principale è quello delle Y e l'asse secondario è quello delle X  */
+			justify-content: center; /* qui diciamo come sono disposti gli elementi sull'asse principale (delle Y) */
+			align-items: center; /* qui diciamo come sono disposti gli elementi sull'asse secondario (delle X) */
+
+		}
+		h1{
+			color: orange;
+		}
+		#section-1{
+			background-color: gainsboro;
+		}
+		#section-2{
+			background-color: aliceblue;
+		}
+		#section-3{
+			background-color: floralwhite;
+		}
+		#section-4{
+			background-color: lightsteelblue;
+		}
+		#section-5{
+			background-color: lightgoldenrodyellow;
+		}
+		img{
+			height: 469px;
+			width: 625px;
+		}
+		h1{
+			text-align: center;
+		}
+		h2{
+			text-align: center;
+		}
+
+	
+	</style>
+</head>
+<body>
+	
+<section id="menù">
+	<h1>RICETTARIO DI MIRIAM</h1>
+
+	<ul>
+		<li>
+			Antipasti
+			<ul>
+				<li>
+					<a href="#section-1">Pettole salentine</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			Primi Piatti
+			<ul>
+				<li>
+					<a href="#section-2">Spaghetti cacio e pepe</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			Secondi Di Pesce E Crostacei
+			<ul>
+				<li>
+					<a href="#section-3">Bastoncini di pesce</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			Secondi Di Carne
+			<ul>
+				<li>
+					<a href="#section-4">Braciole di maiale alla birra ed erbe aromatiche </a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			Dessert
+			<ul>
+				<li>
+					<a href="#section-5">Tiramisu'</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</section>	
+
+	<section>
+		<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pettole" aria-expanded="true" aria-controls="pettole">
+        Pettole Salentine
+      </button>
+    </h2>
+    <div id="pettole" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+	<section id="section-1">
+		<p><h2>Pettole Salentine</h2></p>
+		<img src="./pettolesalentine.jpg">
+		<p><h4>Ingredienti</h4></p>
+		<ol>
+			<li>
+				250g di farina 00
+			</li>
+			<li>
+				2g di lievito di birra secco (o 5g di lievito di birra fresco)
+			</li>
+			<li>
+				250ml di acqua
+			</li>
+			<li>
+				1 cucchiaino di sale
+			</li>
+			<li>
+				1 cucchiaino di zucchero
+			</li>
+		</ol>	
+		<p><h4>Procedimento</h4></p>
+		<p>Mettete farina, lievito e zucchero in una ciotola, aggiungete l'acqua e iniziate a mescolare con una forchetta, quindi unite anche il sale e amalgamate fino ad ottenere una pastella omogenea. <br>Coprite la ciotola e lasciate lievitate per circa 2-3 ore (dovra' raddoppiare di volume).<br>Fate scaldare l'olio in una casseruola e cuocete la pastella a cucchiaiate, girandole per farle dorare uniformemente, quindi scolatele su carta assorbente da cucina. <br> Le pettole salentine sono pronte, servitele subito.
+</p>
+	</section>
+      </div>
+    </div>
+  </div>
+	</section>
+
+	<section>
+		<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Spaghetti" aria-expanded="true" aria-controls="Spaghetti">
+        Spaghetti Cacio E Pepe
+      </button>
+    </h2>
+    <div id="Spaghetti" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+	<section id="section-2">
+
+		<p><h2>Spaghetti Cacio E Pepe</h2></p>
+		<img src="./spaghetticacioepepe.jpg">
+		<p><h4>Ingredienti</h4></p>
+		<ol>
+			<li>
+				320g di spaghetti
+			</li>
+			<li>
+				200g di pecorino romano stagionatura media, da grattuggiare 
+			</li>
+			<li>
+				Pepe nero in grani
+			</li>
+			<li>
+				Sale fino
+			</li>
+		</ol>
+		<h4>Procedimento</h4>
+		<p>Per preparare gli spaghetti cacio e pepe, come prima cosa occupatevi di grattugiare 200g di Pecorino.<br> Proseguite mettendo a bollire l'acqua in un tegame (mettetene circa la meta'di quanto ne usate di solito per cuocere la pasta, cosi' sara' piu' ricca di amido) e quando bollira' potete salare a piacere.Una volta salata,potete cuocere gli spaghetti. <br>Nel frattempo, versate i grani di pepe interi su un tagliere, quindi schiacciateli pestando con un pestello per carne o un macinino. In questo modo si sprigionera' maggiormente il profumo pungente del pepe. <br>Versate meta' dose di pepe schiacciato in una padella ampia antiaderente, tostatelo a fuoco dolce mescolando con una paletta di legno, poi sfumate con paio di mestoli di acqua di cottura della pasta. Le bollicine che vedrete comparire saranno dovute all'amido contenuto nell'acqua. <br>Scolate quindi gli spaghetti quando saranno molto al dente (tenendo da parte l'acqua di cottura) e versateli direttamente nella padella con il pepe tostato; proseguiranno la cottura con il condimento.
+</p>
+
+	</section>
+</div>
+</div>
+	<section>
+		<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bastoncini" aria-expanded="true" aria-controls="bastoncini">
+        Bastoncini Di Pesce
+      </button>
+    </h2>
+    <div id="bastoncini" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+
+
+	<section id="section-3">
+		<p><h2>Bastoncini Di Pesce</h2></p>
+		<img src="./bastoncinidipesce.jpg">
+		<p><h4>Ingredienti</h4></p>
+		<ol>
+			<li>
+				500g di merluzzo
+			</li>
+			<li>
+				2 uova
+			</li>			<li>
+				150g di pangrattato
+			</li>
+			<li>
+				2 cucchiai di farina 00
+			</li>
+			<li>
+				Sale fino
+			</li>
+			<li>
+				Olio di semi
+			</li>
+		</ol>
+		<p><h4>Procedimento</h4></p>
+		<p>Per preparare i bastoncini di pesce iniziate tagliando grossolanamente i filetti di merluzzo, poi passateli al mixer fino ad ottenere un composto omogeneo, incorporate la farina e aggiungete una presa di sale. <br>Intanto preparate gli ingredienti per la doppia panatura in due ciotole capienti: in una sbattete le due uova e nell altra versate il pangrattato.<br> Prelevate piccole manciate di impasto e date la forma di bastoncino con le mani compattando il composto. <br>Una volta ottenuti i bastoncini, passateli prima nell’uovo, poi nel pan grattato e nuovamente nell’uovo e nel pangrattato ottenendo così una doppia panatura croccante. <br>Friggete i bastoncini di pesce in una padella con abbondante olio, quando saranno dorati scolateli e lasciateli asciugare su carta assorbente.
+</p>
+
+	</section>
+</div>
+	<section>
+		<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#braciole" aria-expanded="true" aria-controls="braciole">
+        Braciole Di Maiale Alla Birra Ed Erbe Aromatiche
+      </button>
+    </h2>
+    <div id="braciole" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+
+	<section id="section-4">
+		<p><h2>Braciole Di Maiale Alla Birra Ed Erbe Aromatiche</h2></p>
+		<img src="./bracioledimaialeallabirraederbearomatiche.jpg">
+		<p><h4>Ingredienti</h4></p>
+		<ol>
+			<li>
+				4 braciole di maiale 
+			</li>
+			<li>
+				40g olio extravergine d'oliva
+			</li>
+			<li>
+				1/2 aglio
+			</li>
+			<li>
+				2 rametti di timo
+			</li>
+			<li>
+				Sale fino
+			</li>
+			<li>
+				100ml di birra rossa
+			</li>
+			<li>
+				40g di burro
+			</li>
+			<li>
+				1 rametto di rosmarino
+			</li>
+			<li>
+				1/2 scorza di limone
+			</li>
+		</ol>
+		<p><h4>Procedimento</h4></p>
+		<p>Per preparare le braciole di maiale alla birra ed erbe aromatiche iniziate pulendo e tritando l aglio, le erbe aromatiche e la buccia di limone.<br> Disponete le 4 braciole su un tagliere e salatele e pepatele su ogni lato. <br>Fate scaldare l olio in una padella e cuocete la carne 5-6 minuti per lato. <br>Mettete da parte le braciole, e nella stessa pentola aggiungete il burro, il trito di erbe aromatiche e la birra. <br>Fate rapprendere per un minuto, mescolando bene, quindi spegnete il fuoco. <br>Disponete le braciole nei piatti e irrorate ciascuna con la salsa alla birra. Servitele ancora fumanti.
+</p>
+
+	</section>
+</div>
+
+		<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tiramisu" aria-expanded="true" aria-controls="tiramisu">
+        Tiramisu'
+      </button>
+    </h2>
+    <div id="tiramisu" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+
+	<section id="section-5">
+		<p><h2>Tiramisu'</h2></p>
+		<img src="./tiramisu.jpg">
+		<p><h4>Ingredienti</h4></p>
+		<ol>
+			<li>
+				300g di savoiardi
+			</li>
+			<li>
+				500g di mascarpone
+			</li>
+			<li>
+				300g di caffe' della moka già pronto
+			</li>
+			<li>
+				4 uova freschissime
+			</li>
+			<li>
+				100g di zucchero
+			</li>
+			<li>
+				Cacao amaro in polvere per la superficie 
+			</li>
+		</ol>
+		<p><h4>Procedimento</h4></p>
+		<p>Per preparare il tiramisu' cominciate dalle uova (freschissime): quindi separate accuratamente gli albumi dai tuorli, ricordando che per montare bene gli albumi non dovranno presentare alcuna traccia di tuorlo. <br>Poi montate i tuorli con le fruste elettriche, versando solo meta' dose di zucchero. <br>Non appena il composto sara' diventato chiaro e spumoso, e con le fruste ancora in funzione, potrete aggiungere il mascarpone, poco alla volta. <br>Incorporato tutto il formaggio avrete ottenuto una crema densa e compatta; tenetela da parte.<br> Pulite molto bene le fruste e passate a montare gli albumi versando il restante zucchero un po' alla volta. <br>Dovrete montarli a neve ben ferma; otterrete questo risultato quando rovesciando la ciotola la massa non si muovera'. <br>Prendete una cucchiaiata di albumi e versatela nella ciotola con i tuorli e lo zucchero e mescolate energicamente con una spatola, cosi' stempererete il composto. <br>Dopodiche' procedete ad aggiungere la restante parte di albumi, poco alla alla volta mescolando molto delicatamente dal basso verso l alto. <br>Una volta pronto, distribuite una generosa cucchiaiata di crema sul fondo di una pirofila da 30x20cm e distribuite per bene. <br>Poi inzuppate per pochi istanti i savoiardi nel caffe' freddo gia' zuccherato a vostro piacimento (noi abbiamo aggiunto solo 1 cucchiaino di zucchero), prima da un lato e poi dall altro. <br>Man mano distribuite i savoiardi imbevuti sulla crema, tutti in un verso, cosi' da ottenere un primo strato sul quale andrete a distribuire una parte della crema al mascarpone. Anche in questo caso dovrete livellarla accuratamente cosi' da avere una superficie liscia. E continuate a distribuire i savoiardi imbevuti nel caffe', poi realizzate un altro strato di crema. <br>Livellate la superficie e spolverizzatela con del cacao amaro in polvere e lasciate rassodare in frigorifero per un paio d ore. Il vostro tiramisu' e' pronto per essere gustato!
+</p>
+
+	</section>
+</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>	
+</body>
+</html>
